@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="tw">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>智慧商城</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<style>
+	.full-screen{
+		position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background:rgba(24,199,236,0.5);
+		z-index:10;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+}
+
+
+
+
+p{
+	color:red;
+	margin:5px;
+	cursor:pointer;
+}
+p:hover{
+	background:#4fd4fb;
+}
+</style>
+
+
+</head>
+<body>
+
+<p>商品說明</p>
+<h1>ASUS Zenbo 智慧機器人</h1>
+日文觀三甲 U0757031 劉子儀
+
+#<div class="product" align=center>
+<div class="full-screen">
+<img src="https://zenbo.asus.com/public/lang/2/FB.jpg">
+
+<input type="button" value="x" name="打叉" 
+style="
+	width:30px; 	height:30px; 
+	font-size:20px; 
+	position: relative; 
+	right:30px; 
+	top:-300px; 
+	border:2px blue none;background-color:white;
+">
+
+
+</div>
+<script>
+$("p").click(function(){
+	$(".full-screen").slideToggle();
+});
+$("input").click(function(){
+	$(".full-screen").slideToggle();
+});
+
+</script>
+</body>
+</html>
